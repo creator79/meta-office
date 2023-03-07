@@ -1,22 +1,21 @@
 {
-  "name": "Metaverse-Office",
+  "name": "office-verse",
   "version": "1.0.0",
-  "description": "Server for MetaverseOffice",
+  "description": "<img alt=\"Logo\" align=\"right\" src=\"https://user-images.githubusercontent.com/11501902/139942585-a6b044ce-3695-460a-91bd-dd9f1d4611c8.png\" width=\"20%\" />",
   "main": ".eslintrc.js",
   "scripts": {
-    "start": "cd server && ts-node-dev --project tsconfig.server.json --respawn --transpile-only index.ts && npm run dev",
-    "heroku-postbuild": "npm i && cd types && npm i && cd ../server && tsc --project tsconfig.server.json",
+    "start": "cd server && ts-node-dev --project tsconfig.server.json --respawn --transpile-only index.ts",
+    "dev": "cd client && npm run dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git"
+    "url": "git+https://github.com/creator79/meta-office.git"
   },
-  "keywords": [],
-  "author": "Vivek Upadhyay",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https//github.com/vivekupadhyay/Metaverse-Office/issues"
+    "url": "https://github.com/creator79/meta-office/issues"
   },
   "homepage": "",
   "devDependencies": {
