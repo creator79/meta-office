@@ -9,8 +9,11 @@ import { RoomType } from '../types/Rooms'
 
 import { SkyOffice } from './rooms/SkyOffice'
 
-const port = Number(process.env.PORT || 2567)
+const port = Number(process.env.PORT || 8080)
 const app = express()
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
 app.use(cors())
 app.use(express.json())
