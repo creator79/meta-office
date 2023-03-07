@@ -12,9 +12,13 @@ import { SkyOffice } from './rooms/SkyOffice'
 const port = Number(process.env.PORT || 2567)
 const app = express()
 
-app.use(cors())
+// put the local server to this "https://meta-office.onrender.com" to test the production build locally
+app.use(cors({ origin: 'https://meta-office.onrender.com' }))
+console.log('CORS enabled for https://meta-office.onrender.com', process.env.NODE_ENV);
 app.use(express.json())
 // app.use(express.static('dist'))
+
+
 
 const server = http.createServer(app)
 const gameServer = new Server({
